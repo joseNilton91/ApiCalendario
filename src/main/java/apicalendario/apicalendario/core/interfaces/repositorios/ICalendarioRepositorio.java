@@ -11,6 +11,7 @@ import apicalendario.apicalendario.dominio.Calendario;
 @Repository
 
 public interface ICalendarioRepositorio extends JpaRepository<Calendario, Long> {
+    
     @Query("SELECT c FROM Calendario c WHERE YEAR(c.fecha) = :anio")
     List<Calendario> findByFechaYear(@Param("anio") String anio);
 }

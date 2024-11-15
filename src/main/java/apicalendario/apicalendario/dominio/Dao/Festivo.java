@@ -3,7 +3,7 @@ package apicalendario.apicalendario.dominio.Dao;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.sql.Date;
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
@@ -11,5 +11,5 @@ import java.sql.Date;
 
 public class Festivo {
     private String nombre;
-    private Date fecha;
+    private LocalDate fecha;
 }
